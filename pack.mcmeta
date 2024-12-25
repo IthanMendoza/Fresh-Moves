@@ -1,6 +1,7 @@
 {
-    "pack": {
-        "description": "\u00A79■ EMF Player Animation Pack \u00A7r\n■ By Ithan and TrasTick",
-        "pack_format": 13
-    }
+	"pack": {
+		"pack_format": 46,
+		"supported_formats":[41,46],
+		"description": "1.21.2 and higher port of Just Expressions"
+	}
 }
