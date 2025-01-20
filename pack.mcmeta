@@ -1,6 +1,7 @@
 {
     "pack": {
-        "description": "\u00A79■ EMF Player Animation Pack \u00A7r\n■ By Ithan and TrasTick",
-        "pack_format": 13
+        "pack_format": 15,
+        "supported_formats":[0,99],
+        "description": "\u00A7a☑ With Animated Eyes \u00A7b\n❖ For 1.21.2 and below"
     }
 }
