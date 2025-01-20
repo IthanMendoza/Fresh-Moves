@@ -1,0 +1,47 @@
+{
+	"credit": "Made with Blockbench",
+	"textureSize": [64, 32],
+	"models": [
+		{
+			"part": "right_wing",
+			"id": "right_wing",
+			"invertAxis": "xy",
+			"translate": [-5, -24, 0],
+			"boxes": [
+				{
+					"coordinates": [-5, 4, 0, 10, 20, 2],
+					"uvNorth": [34, 2, 24, 22],
+					"uvEast": [36, 2, 34, 22],
+					"uvSouth": [46, 2, 36, 22],
+					"uvWest": [24, 2, 22, 22],
+					"uvUp": [24, 2, 34, 0],
+					"uvDown": [34, 0, 44, 2],
+					"sizeAdd": 1
+				}
+			],
+			"animations": [
+				{
+					"right_wing.ty": " var.player_body_ty + 1",
+					"left_wing.ty": "  var.player_body_ty + 1",
+					"right_wing.tz": " var.player_body_tz",
+					"left_wing.tz": "  var.player_body_tz",
+					"right_wing.rx": " var.player_body_rx + torad( 10) + torad(35)*var.player_limb_speed + torad(5)*var.player_sprinting + torad(15)*var.player_gliding",
+					"left_wing.rx": "  var.player_body_rx + torad( 10) + torad(35)*var.player_limb_speed + torad(5)*var.player_sprinting + torad(15)*var.player_gliding",
+					"right_wing.ry": " torad( 1) + torad(-5)*var.player_limb_speed + torad(-5)*var.player_sprinting + torad(+10)*var.player_gliding",
+					"left_wing.ry": "  torad(-1) + torad( 5)*var.player_limb_speed + torad( 5)*var.player_sprinting + torad(-10)*var.player_gliding",
+					"right_wing.rz": " right_wing.rz + torad(-7.5)*var.player_sneaking + torad( 1)*var.player_limb_speed + torad( 1)*var.player_sprinting",
+					"left_wing.rz": "   left_wing.rz + torad( 7.5)*var.player_sneaking + torad(-1)*var.player_limb_speed + torad(-1)*var.player_sprinting"
+				}
+			]
+		},
+		{
+			"part": "left_wing",
+			"id": "left_wing",
+			"invertAxis": "xy",
+			"translate": [5, -24, 0],
+			"boxes": [
+				{"coordinates": [-5, 4, 0, 10, 20, 2], "textureOffset": [22, 0], "sizeAdd": 1}
+			]
+		}
+	]
+}

@@ -1,0 +1,25 @@
+{
+	"credit": "Made with Blockbench",
+	"textureSize": [64, 32],
+	"models": [
+		{
+			"part": "cloak",
+			"id": "cloak",
+			"invertAxis": "xy",
+			"translate": [0, -24, -2],
+			"boxes": [
+				{"coordinates": [-5, 8, 1, 10, 16, 1], "textureOffset": [0, 0]}
+			],
+			"animations": [
+				{
+					"cloak.tx": " var.player_body_tx",
+					"cloak.ty": " var.player_body_ty",
+					"cloak.tz": "-var.player_body_tz",
+					"cloak.rx": "-var.player_body_rx -torad(7.5) - torad(20)*var.limb_speed - (torad(15) - torad(2.5)*sin(2*var.ls))*var.player_sprinting - torad(85)*var.parcool_slide",
+					"cloak.ry": " var.player_body_ry",
+					"cloak.rz": " var.player_body_rz"
+				}
+			]
+		}
+	]
+}
